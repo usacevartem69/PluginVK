@@ -1,0 +1,51 @@
+{
+    "name": "post-vk",
+    "displayName": "VK Post",
+    "description": "Плагин для быстрого создания постов ВКонтакте прямо из VS Code",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "VK.OpenVk",
+                "title": "Open VK",
+                "category": "VK Post"
+            },
+
+            {
+                "command": "VK.CreatePostTemplate",
+                "title": "Make Post",
+                "category": "VK Post"
+            },
+
+            {
+                "command": "VK.OpenVkWithText",
+                "title": "Open VK With Text",
+                "category": "VK Post"
+            }
+        ],
+        "menus": {
+            "command-palette": [
+                {
+                    "command": "VK.OpenVk"
+                },
+                {
+                    "command": "VK.CreatePostTemplate"
+                },
+                {
+                    "command": "VK.OpenVkWithText"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "compile": "tsc -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.105.0",
+        "typescript": "^5.9.3"
+    }
+}
