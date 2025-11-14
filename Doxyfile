@@ -1,0 +1,23 @@
+# Базовые настройки
+PROJECT_NAME           = "My C++ Project"
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+# Что документировать
+INPUT                  = .
+FILE_PATTERNS          = *.cpp *.h *.hpp
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Форматы вывода
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Русский язык
+OUTPUT_LANGUAGE        = Russian
+
+# Поиск
+SEARCHENGINE           = YES
