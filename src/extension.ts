@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
         // Шаблон поста для студента ИТМО, который завалился на ОП
-        const PostTemplate = `# Пост для ВК\n\nПривет, друзья! 🙌 \n\nСегодня хочу поделиться с вами... 🙊 
+        const PostTemplate = `# Пост для ВК\n\nПривет, друзья! 🙌 \n\nСегодня хочу поделиться с вами...
         \n\n#УлетелНаДопсу #ОПМогила #ИСПРОСила \n\n📅 ${new Date().toLocaleDateString()}`;
         // Вставляет текст на то место, где стоит курсор
         await editor.edit(editBuilder => {
